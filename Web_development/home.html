@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninjas Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- navigation baar -->
+    <nav class="navbar position-static navbar-expand-lg bg-body-tertiary col-12" style="background-color: #0c1027 !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="border-radius: 50%;" src="https://img.icons8.com/?size=1x&id=Bri4HBrgCsPa&format=png"
+                    alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">ninjas <br>Player</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link  m-lg-3 text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Favorite
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="d-flex justify-content-end" role="search" style="width: 60%;">
+                    <input style="background-color: #0c1027; border-color: #141b41; width: 50% !important; color:white"
+                        class="form-control me-2 color-white" type="search" placeholder="Search" aria-label="Search">
+
+                    <button style="background-color: #141b41;" class="btn btn-outline-blue me-4 text-white"
+                        type="submit">Search</button>
+                </form>
+
+                <div class="me-5 text-white">
+                    <img style="width: 40px;"
+                        src="https://ouch-cdn2.icons8.com/Uh6795tM9rmhHqNE2pBEwOkHkPYH4-lVZSGIiWLXcAI/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNDg5/L2ZiMTdjMTRjLWRi/NjctNGQwMy1iODhj/LWIzZDk5MTIwYzEw/Mi5wbmc.png"
+                        alt="">
+                </div>
+                <div class="text-white">
+                    <img style="width: 50px; border-radius: 50%;"
+                        src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/345201159_1279782469581235_529274038566844263_n.jpg?stp=dst-jpg_s851x315&_nc_cat=101&ccb=1-7&_nc_sid=da31f3&_nc_ohc=H63Kc251kqQAX-YafiD&_nc_ht=scontent.fpat3-3.fna&oh=00_AfAYwL2O32PQHovh9TQdfVBceJFGq_ZkyyDgCeQCJenhaQ&oe=64A4517D"
+                        alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- for entire body -->
+    <div class="container-fluid p-3" style="background-color: #0c1027; width: 100%; height: auto !important;">
+
+        <div class="container">
+            <div class="row ">
+                <!-- for the right song banner -->
+                <div class="col-sm-12 col-md-9">
+                    <div class="card" style="background-color: #141b41;">
+                        <div class="card-body">
+                            <div class="card border-0" style=" max-width:100%;height:auto;background-color: #141b41;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img\Web capture_1-7-2023_04858_ninjasfiles.s3.amazonaws.com.jpeg"
+                                            class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body text-white">
+                                            <h5 class="card-title">ColdPlay</h5>
+                                            <span class="d-flex justify-content-end text-white">851 follower</span>
+                                            <small style="font-weight: lighter;">Indian Brand</small>
+                                            <p style="font-weight: lighter;" class="card-text">This is a wider card with
+                                                supporting text below as a natural lead-in to additional content. This
+                                                content is a little bit longer.</p>
+                                            <p style="font-weight: lighter;" class="card-text">
+                                                <button class="btn mt-4 px-5 d-inline"><span class="tt1">Play
+                                                        All</span></button>
+                                                <small class="folow p-3">Follow</small>
+                                                <small class="tt1 trk d-block">271 Tracks | 20 Album</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right part -->
+                <div class="col-sm-12 col-md-3">
+                    <div class="card" style="background-color: #0c1027">
+                        <div class="card-body row" style="background-color: #0c1027;">
+                            <table class="table">
+                                <!-- head of artist -->
+                                <thead>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <th style="background-color: #0c1027;" scope="col tt1"><span
+                                                class="tt1 ">Similar Artist</span></th>
+                                        <th style="background-color: #0c1027;" scope="col tt1 rr1"></th>
+                                        <th style="background-color: #0c1027;" scope="col tt1 rr1"><span
+                                                style="font-weight: lighter;" class="tt1 rr">view All</span></th>
+
+                                    </tr>
+                                </thead>
+                                <!-- artist body -->
+                                <tbody>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <img width="40px"
+                                                src="https://th.bing.com/th/id/OIP.NYcrN0NQDDnYb8yIRFfLigHaFQ?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span class="tt1 rr">Arijit Singh</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 class="tt1 rr">4:30</h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <img width="40px"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 class="tt1 rr">2:30</h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <img width="40px"
+                                                src="https://th.bing.com/th/id/OIP.Grduetj7dzh6fqLtnculmQHaFS?w=202&h=144&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span class="tt1 rr">Payal Dev</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 class="tt1 rr">3:30</h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <img width="40px"
+                                                src="https://th.bing.com/th/id/OIP.e7eX6kWWZRZqQ_cwrBPiwgHaFj?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span class="tt1 rr">Atif Aslam</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 class="tt1 rr">4:30</h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <img width="40px"
+                                                src="https://th.bing.com/th/id/OIP.e7eX6kWWZRZqQ_cwrBPiwgHaFj?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span class="tt1 rr">Atif Aslam</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 class="tt1 rr">4:30</h5>
+                                        </td>
+
+
+                                    </tr>
+
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- second part -->
+            <div class="row mt-3 ">
+                <div class="col-sm-12 col-md-9 position-relative" style="margin-top: -5%;">
+                    <div class="card" style="background-color:#0c1027;border-color: #0c1027;">
+                        <div class="card-body border-0">
+                            <div class="card" style="background-color: #0c1027">
+                                <div class="card-body row border-0"
+                                    style="background-color: #0c1027;border-color: #0c1027;">
+
+                                    <!-- first table -->
+                                    <table class="table">
+                                        <!-- head of artist -->
+                                        <thead>
+                                            <tr style="border-color: #0c1027;">
+
+                                                <th style="background-color: #0c1027; border-color: #0c1027;"
+                                                    scope="col tt1"><span class="tt1 ">Suggestion for you</span></th>
+                                                <th style="background-color: #0c1027;" scope="col tt1 rr1"></th>
+                                                <th style="background-color: #0c1027;" scope="col tt1 rr1"><span
+                                                        style="font-weight: lighter;" class="tt1 rr"></span></th>
+
+                                            </tr>
+                                        </thead>
+                                        <!-- artist body -->
+                                        <tbody class="p-3">
+                                            <!-- 1st list -->
+                                            <tr style="border-color: #1a1e33;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.NYcrN0NQDDnYb8yIRFfLigHaFQ?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Arijit Singh</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <!-- 2 list -->
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <!-- 3 rd list -->
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+                                            <tr
+                                                style="border: 10px solid #0c1027; border-left: 0;border-right: 0;border-bottom: 0;">
+                                                <td style="background-color: #1a1e33;">
+                                                    <span class="tt1">01</span>
+                                                    <img style="margin-left: 4%;" width="40px"
+                                                        src="https://th.bing.com/th/id/OIP.E690MZjtmuFpXSdq5YO_lAHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                        alt="">
+                                                    <span style="margin-left: 4%;" class="tt1 rr">Punjabi song</span>
+                                                    <br>
+                                                </td>
+                                                <td style="background-color: #1a1e33;">
+                                                </td>
+
+                                                <td style="background-color: #1a1e33;" class="tt1">
+                                                    <span class="tt1 rr"><i class="fa fa-heart-o"></i></span>
+                                                    <span style="margin-left: 50%;" class="tt1"><i
+                                                            class=" fa fa-plus"></i></span>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- recent -->
+                <div class="col-sm-12 col-md-3" style="margin-top: -4%;">
+                    <div class="card" style="background-color: #0c1027">
+                        <div class="card-body row" style="background-color: #0c1027;">
+                            <table class="table">
+                                <!-- head of artist -->
+                                <thead>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <th style="background-color: #0c1027;" scope="col tt1"><span class="tt1 ">Recent
+                                                played</span></th>
+                                        <th style="background-color: #0c1027;" scope="col tt1 rr1"></th>
+                                        <th style="background-color: #0c1027;" scope="col tt1 rr1"><span
+                                                style="font-weight: lighter;" class="tt1 rr">view All</span></th>
+
+                                    </tr>
+                                </thead>
+                                <!-- artist body -->
+                                <tbody>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP.NYcrN0NQDDnYb8yIRFfLigHaFQ?w=218&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Arijit Singh</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr style="border-color: #0c1027;">
+
+                                        <td style="background-color: #0c1027;">
+                                            <span class="tt1">01</span>
+                                            <img width="40px" style="margin-left: 5px;"
+                                                src="https://th.bing.com/th/id/OIP._-mjrxSzEalTAuA2CMgRiAHaI-?w=150&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                                                alt="">
+                                            <span style="margin-left: 5px;" class="tt1 rr">Jubin Natiyal</span>
+                                            <br>
+                                        </td>
+                                        <td style="background-color: #0c1027;">
+                                        </td>
+
+                                        <td style="background-color: #0c1027;" class="tt1">
+                                            <h5 style="margin-left: 5px;" class="tt1 rr"><i class="fa fa-heart-o"></i>
+                                            </h5>
+                                        </td>
+
+
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+        </div>
+        <footer class="position-fixed">
+            <div class="active-song-description">
+                <!-- song image -->
+                <div id="song-image">
+                    <img style="border-radius: 50%;" src="https://scontent.fpat3-3.fna.fbcdn.net/v/t39.30808-6/345201159_1279782469581235_529274038566844263_n.jpg?stp=dst-jpg_s851x315&_nc_cat=101&ccb=1-7&_nc_sid=da31f3&_nc_ohc=H63Kc251kqQAX-YafiD&_nc_ht=scontent.fpat3-3.fna&oh=00_AfAYwL2O32PQHovh9TQdfVBceJFGq_ZkyyDgCeQCJenhaQ&oe=64A4517D">
+                </div>
+                <!-- song name and author -->
+                <div class="song-desc">
+                    <div class="tt1">
+                        Imagine by John
+                    </div>
+                    <div class="tt1">
+                        John Lenon
+                    </div>
+                    <!-- heart icon and ban icon -->
+                </div>
+                <div class="heart-and-ban-icon">
+                    <span>
+                        <i class="fa fa-heart tt1"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-ban tt1"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- these are the main player controls -->
+            <div class="player">
+                <div class="controls">
+                    <div><i class="fa fa-random tt1"></i></div>
+                    <div><i class="fa fa-step-backward tt1"></i></div>
+                    <div><i class="fa fa-pause-circle tt1"></i></div>
+                    <div><i class="fa fa-step-forward tt1"></i></div>
+                    <div><i class="fa fa-redo tt1"></i></div>
+                </div>
+                <!-- this is the slider -->
+                <div id="slider">
+                    <!-- current time -->
+                    <div class="time">
+                        1:39
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                    </div>
+                    <!-- total time -->
+                    <div class="time">
+                        4:44
+                    </div>
+                </div>
+            </div>
+            <!-- other icons including the volume slider and all -->
+            <div class="extras">
+                <div>
+                    <i class="fa fa-list-ul tt1"></i>
+                </div>
+                <div>
+                    <i class="fa fa-laptop tt1"></i>
+                </div>
+                <div>
+                    <i class="fa fa-volume-up tt1"></i>
+                </div>
+                <div class="slidecontainer" style="width:30%;">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                </div>
+                <div>
+                    <i class="fa fa-expand-alt tt1"></i>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
